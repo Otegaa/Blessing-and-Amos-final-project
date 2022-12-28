@@ -21,19 +21,19 @@
     - The freeCodeCamp Team
 
     -->
-    <div class="container">
+  <div class="container">
       <header>
         <h1 id="title">Student Survey Form</h1>
         <p id="description">
           <i>Thank you for taking out time to fill this form</i>
         </p>
       </header>
-      <div class="whole-form">
+      <section class="whole-form">
         <form id="survey-form">
           <div>
             <label for="name" id="name-label">Enter Your Name: <br /></label>
             <input
-              type="text"
+              type="text" name="name"
               id="name"
               placeholder="Name"
               class="control-form"
@@ -45,7 +45,7 @@
             <label for="email" id="email-label">Enter Your Email: <br /></label>
             <input
               type="email"
-              id="email"
+              id="email" name="email"
               placeholder="Email"
               class="control-form"
               required
@@ -56,13 +56,13 @@
               >Enter Your Phone Number: <br
             /></label>
             <input
-              type="email"
-              id="number"
+              type="number"
+              id="number" name="number"
               placeholder="Number"
-              minlength="11"
-              maxlength="11"
+              min="2"
+              max="12"
               class="control-form"
-              required
+              required size="10"
             />
             <br />
           </div>
@@ -81,23 +81,18 @@
 
           <div class="course-study">
             <legend>What course are you studying?</legend>
-            <input type="radio" name="course" />
+            <input type="radio" name="course" value="computer Science" />
             <label for="course">Computer Science</label> <br />
-            <input type="radio" name="course" />
+            <input type="radio" name="course"  value="elect-elect"/>
             <label for="course">Electrical Engineering</label> <br />
-            <input type="radio" name="course" />
+            <input type="radio" name="course" value="elect-elect"/>
             <label for="course">Mechanical Engineering</label> <br />
-            <input type="radio" name="course" />
+            <input type="radio" name="course" value="mech-eng" />
             <label for="course">Other</label> <br />
             <label for="other" name="course"
               >Please indicate course of study below if other:</label
             >
-            <input
-              type="text"
-              id="other"
-              class="control-form"
-              placeholder="Indicate here"
-            />
+            <input type="text" id="other" class="control-form" placeholder="Indicate here" />
           </div>
 
           <div class="payment-mode">
@@ -124,9 +119,9 @@
             />
           </div>
         </form>
-      </div>
+      </section>
     </div>
-
+   
     <script src="js/index.js"></script>
   </body>
 </html>
