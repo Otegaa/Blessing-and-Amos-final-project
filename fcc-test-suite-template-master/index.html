@@ -21,8 +21,112 @@
     - The freeCodeCamp Team
 
     -->
+    <div class="container">
+      <header>
+        <h1 id="title">Student Survey Form</h1>
+        <p id="description">
+          <i>Thank you for taking out time to fill this form</i>
+        </p>
+      </header>
+      <div class="whole-form">
+        <form id="survey-form">
+          <div>
+            <label for="name" id="name-label">Enter Your Name: <br /></label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Name"
+              class="control-form"
+              required
+            />
+            <br />
+          </div>
+          <div>
+            <label for="email" id="email-label">Enter Your Email: <br /></label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Email"
+              class="control-form"
+              required
+            /><br />
+          </div>
+          <div>
+            <label for="email" id="number-label"
+              >Enter Your Phone Number: <br
+            /></label>
+            <input
+              type="email"
+              id="number"
+              placeholder="Number"
+              minlength="11"
+              maxlength="11"
+              class="control-form"
+              required
+            />
+            <br />
+          </div>
 
-    <h1>Hello world!</h1>
+          <div>
+            <label for="gender">Choose your gender:</label> <br />
+            <select name="gender" id="dropdown" class="control-form" required>
+              <option disabled selected value>Please select gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="transgender">Transgender</option>
+              <option value="prefer">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="course-study">
+            <legend>What course are you studying?</legend>
+            <input type="radio" name="course" />
+            <label for="course">Computer Science</label> <br />
+            <input type="radio" name="course" />
+            <label for="course">Electrical Engineering</label> <br />
+            <input type="radio" name="course" />
+            <label for="course">Mechanical Engineering</label> <br />
+            <input type="radio" name="course" />
+            <label for="course">Other</label> <br />
+            <label for="other" name="course"
+              >Please indicate course of study below if other:</label
+            >
+            <input
+              type="text"
+              id="other"
+              class="control-form"
+              placeholder="Indicate here"
+            />
+          </div>
+
+          <div class="payment-mode">
+            <legend>Are you fee-paying or on scholarship?</legend>
+            <input type="checkbox" value="fee-paying" />
+            <label for="fee-paying">Fee-paying</label> <br />
+            <input type="checkbox" value="scholarship" />
+            <label for="scholarship">Scholarship</label><br />
+          </div>
+
+          <div class="comment">
+            <label for="review">Any additional comment or suggestions?</label>
+            <br />
+            <textarea name="review" id="review" rows="10" cols="10"></textarea
+            ><br />
+          </div>
+
+          <div>
+            <input
+              type="submit"
+              value="Submit"
+              class="control-form"
+              id="submit"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+
     <script src="js/index.js"></script>
   </body>
 </html>

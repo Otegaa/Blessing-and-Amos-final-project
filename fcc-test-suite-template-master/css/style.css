@@ -1,0 +1,79 @@
+body {
+  font-family: "Josefin Sans";
+  background-color: #fff;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.container {
+  height: 100%;
+}
+
+#title {
+  font-size: 50px;
+}
+.container p {
+  font-size: 20px;
+  display: inline-block;
+  margin-top: -90px;
+}
+
+.whole-form {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+
+#survey-form {
+  font-size: 20px;
+  background-color: #fffafb;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding-left: 50px;
+}
+
+#description {
+  font-size: 20px;
+}
+
+.control-form {
+  display: block;
+  width: 80%;
+  height: 50px;
+  font-size: 20px;
+  padding: 3.75px;
+  margin-top: 6px;
+  background-clip: padding-box;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding-left: 3px;
+}
+
+.course-study {
+  margin-top: 30px;
+}
+
+.payment-mode {
+  margin-top: 30px;
+}
+
+#review {
+  display: block;
+  width: 80%;
+  padding: 3.75px;
+  font-size: 20px;
+  background-clip: padding-box;
+  border: 1px solid #000;
+  border-radius: 10px;
+  margin-top: 6px;
+}
+
+.comment {
+  margin-top: 30px;
+}
+
+#submit {
+  background-color: #68bb59;
+  cursor: pointer;
+}
